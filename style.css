@@ -1,0 +1,177 @@
+html {
+    background-color: #314870;
+    background-image: url("images/CollectionBackground.png");
+    top: 0; 
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    margin: 0px;
+
+}
+
+body {
+    margin: 0; 
+    height: 100%;
+}
+
+.bodyDiv {
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+    letter-spacing: 0.5pt;
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8pt;
+}
+
+.top {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-top: -20px;
+}
+
+.main {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.bottom {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.meleeDiv {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-left: 717px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    background-color: rgba(110, 133, 172, 0.25);
+    height: 16px;
+    line-height: 16px;
+}
+
+.top:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+.main:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+.bottom:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+
+
+.col1 {
+    width: 171px;
+    height: 89px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2 {
+    width: 281px;
+    height: 89px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col3 {
+    width: 316px;
+    height: 89px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col4 {
+    width: 342px;
+    height: 89px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    max-height: 78px;
+}
+ 
+.select-dropdown,
+.select-dropdown * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.select-dropdown {
+	position: relative;
+	background-color: rgba(151, 176, 240, 0.25);
+	border-radius: 0px;
+}
+
+.select-dropdown select {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    color: white;
+	font-size: 8pt;
+	font-weight: normal;
+	max-width: 100%;
+    padding: 2px 2px 2px 2px;
+	background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
+    background-color: transparent;
+}
+
+select {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 1;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+
+select option {
+    background-color: #49567a;
+}

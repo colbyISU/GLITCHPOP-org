@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>VALORANT Collection Maker</title>
+      <link rel="icon" href="images/VALORANT.png">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <script src="script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   </head>
+   <header>
+      <p style="text-align: center;"><img src ="images/VALORANT-text.png" alt = "VALORANT-text" style="width: 300px;"></p>
+   </header>
+   <body>
+      <div class="bodyDiv">
+         <div class="top">
+            <div class="col1">
+               <div><img id="classicImage" class="profile" src="images/classic/Classic.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#classicImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/classic/Classic.png" selected>CLASSIC</option>
+                  <option value="images/classic/Classic_Final_Chamber.png">FINAL CHAMBER (SAGE)</option>
+                  <option value="images/classic/Classic_FIRE_arm.png">FIRE/ARM (KAY/O)</option>
+                  <optgroup label="FORSAKEN">
+                     <option value="images/classic/Classic_Forsaken.png">FORSAKEN</option>
+                     <option value="images/classic/Classic_Forsaken_Gold.png">FORSAKEN (GOLD)</option>
+                  </optgroup>
+                  <option value="images/classic/Classic_Galleria.png">GALLERIA</option>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/classic/Classic_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/classic/Classic_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/classic/Classic_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/classic/Classic_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <optgroup label="GRAVITATIONAL URANIUM NEUROBLASTER">
+                     <option value="images/classic/Classic_GUN.png">G.U.N.</option>
+                     <option value="images/classic/Classic_GUN_Black.png">G.U.N. (BLACK)</option>
+                     <option value="images/classic/Classic_GUN_Chrome.png">G.U.N. (CHROME)</option>
+                     <option value="images/classic/Classic_GUN_RWB.png">G.U.N. (RWB)</option>
+                  </optgroup>
+                  <optgroup label="INFINITY">
+                     <option value="images/classic/Classic_Infinity.png">INFINITY</option>
+                     <option value="images/classic/Classic_Infinity_Pink.png">INFINITY (PINK)</option>
+                     <option value="images/classic/Classic_Infinity_White.png">INFINITY (WHITE)</option>
+                     <option value="images/classic/Classic_Infinity_Yellow.png">INFINITY (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/classic/Classic_Kingdom.png">KINGDOM</option>
+                  <option value="images/classic/Classic_Pistolinha.png">PISTOLINHA (RAZE)</option>
+                  <optgroup label="PRIME">
+                     <option value="images/classic/Classic_Prime.png">PRIME</option>
+                     <option value="images/classic/Classic_Prime_Blue.png">PRIME (BLUE)</option>
+                     <option value="images/classic/Classic_Prime_Orange.png">PRIME (ORANGE)</option>
+                     <option value="images/classic/Classic_Prime_Yellow.png">PRIME (YELLOW)</option>
+                  </optgroup>
+                  <optgroup label="PRISM III">
+                     <option value="images/classic/Classic_Prism_3.png">PRISM III</option>
+                     <option value="images/classic/Classic_Prism_3_Green.png">PRISM III (GREEN)</option>
+                     <option value="images/classic/Classic_Prism_3_Pink.png">PRISM III (PINK)</option>
+                     <option value="images/classic/Classic_Prism_3_Purple.png">PRISM III (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/classic/Classic_Red_Alert.png">RED ALERT</option>
+                  <option value="images/classic/Classic_Sakura.png">SAKURA</option>
+                  <option value="images/classic/Classic_Smite.png">SMITE</option>
+                  <option value="images/classic/Classic_Songsteel.png">SONGSTEEL</option>
+                  <optgroup label="SPLINE">
+                     <option value="images/classic/Classic_Spline.png">SPLINE</option>
+                     <option value="images/classic/Classic_Spline_Blue.png">SPLINE (BLUE)</option>
+                     <option value="images/classic/Classic_Spline_Green.png">SPLINE (GREEN)</option>
+                     <option value="images/classic/Classic_Spline_Red.png">SPLINE (RED)</option>
+                  </optgroup>
+                  <optgroup label="SURGE">
+                     <option value="images/classic/Classic_Surge.png">SURGE</option>
+                     <option  value="images/classic/Classic_Surge_Black.png">SURGE (BLACK)</option>
+                     <option value="images/classic/Classic_Surge_Blue.png">SURGE (BLUE)</option>
+                     <option value="images/classic/Classic_Surge_Yellow.png">SURGE (YELLOW)</option>
+                  </optgroup>
+               </select>
+            </div>
+         </div>
+         <div class="top">
+            <div class="col2">
+               <div><img id="stingerImage" class="profile" src="images/stinger/Stinger.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#stingerImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/stinger/Stinger.png">STINGER</option>
+                  <option value="images/stinger/Stinger_Aristocrat.png">ARISTOCRAT</option>
+                  <option value="images/stinger/Stinger_Cavalier.png">CAVALIER</option>
+                  <option value="images/stinger/Stinger_Couture.png">COUTURE</option>
+                  <option value="images/stinger/Stinger_Depths.png">DEPTHS</option>
+                  <optgroup label="EGO">
+                     <option value="images/stinger/Stinger_Ego.png">EGO</option>
+                     <option value="images/stinger/Stinger_Ego_Green.png">EGO (GREEN)</option>
+                     <option value="images/stinger/Stinger_Ego_Red.png">EGO (RED)</option>
+                     <option value="images/stinger/Stinger_Ego_Teal.png">EGO (TEAL)</option>
+                  </optgroup>
+                  <option value="images/stinger/Stinger_Prism_2.png">PRISM II</option>
+                  <option value="images/stinger/Stinger_Red_Alert.png">RED ALERT</option>
+                  <option value="images/stinger/Stinger_Sakura.png">SAKURA</option>
+                  <option value="images/stinger/Stinger_Sensation.png">SENSATION</option>
+                  <option value="images/stinger/Stinger_Silvanus.png">SILVANUS</option>
+                  <optgroup label="SOVEREIGN">
+                     <option value="images/stinger/Stinger_Sovereign.png">SOVEREIGN</option>
+                     <option value="images/stinger/Stinger_Sovereign_Gold.png">SOVEREIGN (GOLD)</option>
+                     <option value="images/stinger/Stinger_Sovereign_Purple.png">SOVEREIGN (PURPLE)</option>
+                     <option value="images/stinger/Stinger_Sovereign_Silver.png">SOVEREIGN (SILVER)</option>
+                  </optgroup>
+                  <optgroup label="SURGE">
+                     <option value="images/stinger/Stinger_Surge.png">SURGE</option>
+                     <option value="images/stinger/Stinger_Surge_Black.png">SURGE (BLACK)</option>
+                     <option value="images/stinger/Stinger_Surge_Blue.png">SURGE (BLUE)</option>
+                     <option value="images/stinger/Stinger_Surge_Yellow.png">SURGE (YELLOW)</option>
+                  </optgroup>
+               </select>
+            </div>
+         </div>
+         <div class="top">
+            <div class="col3">
+               <div><img id="bulldogImage" class="profile" src="images/bulldog/Bulldog.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#bulldogImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/bulldog/Bulldog.png">BULLDOG</option>
+                  <option value="images/bulldog/Bulldog_Aristocrat.png">ARISTOCRAT</option>
+                  <option value="images/bulldog/Bulldog_Convex.png">CONVEX</option>
+                  <option value="images/bulldog/Bulldog_Couture.png">COUTURE</option>
+                  <option value="images/bulldog/Bulldog_Depths.png">DEPTHS</option>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/bulldog/Bulldog_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/bulldog/Bulldog_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/bulldog/Bulldog_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/bulldog/Bulldog_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <option value="images/bulldog/Bulldog_Horizon.png">HORIZON</option>
+                  <optgroup label="INFINITY">
+                     <option value="images/bulldog/Bulldog_Infinity.png">INFINITY</option>
+                     <option value="images/bulldog/Bulldog_Infinity_Pink.png">INFINITY (PINK)</option>
+                     <option value="images/bulldog/Bulldog_Infinity_White.png">INFINITY (WHITE)</option>
+                     <option value="images/bulldog/Bulldog_Infinity_Yellow.png">INFINITY (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/bulldog/Bulldog_K_TAC.png">K/TAC</option>
+                  <option value="images/bulldog/Bulldog_Polyfox.png">POLYFOX</option>
+                  <option value="images/bulldog/Bulldog_Rush.png">RUSH</option>
+               </select>
+            </div>
+         </div>
+         <div class="top">
+            <div class="col4">
+               <div><img id="marshalImage" class="profile" src="images/marshal/Marshal.png" style="width: 90%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#marshalImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/marshal/Marshal.png">MARSHAL</option>
+                  <option value="images/marshal/Marshal_Couture.png">COUTURE</option>
+                  <option value="images/marshal/Marshal_Galleria.png">GALLERIA</option>
+                  <optgroup label="MAGEPUNK">
+                     <option value="images/marshal/Marshal_Magepunk.png">MAGEPUNK</option>
+                     <option value="images/marshal/Marshal_Magepunk_Green.png">MAGEPUNK (GREEN)</option>
+                     <option value="images/marshal/Marshal_Magepunk_Orange.png">MAGEPUNK (ORANGE)</option>
+                     <option value="images/marshal/Marshal_Magepunk_Purple.png">MAGEPUNK (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/marshal/Marshal_Monarch.png">MONARCH</option>
+                  <option value="images/marshal/Marshal_Polyfrog.png">POLYFROG</option>
+                  <option value="images/marshal/Marshal_Ruin.png">RUIN</option>
+                  <option value="images/marshal/Marshal_Songsteel.png">SONGSTEEL</option>
+                  <optgroup label="SOVEREIGN">
+                     <option value="images/marshal/Marshal_Sovereign.png">SOVEREIGN</option>
+                     <option value="images/marshal/Marshal_Sovereign_Gold.png">SOVEREIGN (GOLD)</option>
+                     <option value="images/marshal/Marshal_Sovereign_Purple.png">SOVEREIGN (PURPLE)</option>
+                     <option value="images/marshal/Marshal_Sovereign_Silver.png">SOVEREIGN (SILVER)</option>
+                  </optgroup>
+                  <option value="images/marshal/Marshal_Wasteland.png">WASTELAND</option>
+                  <option value="images/marshal/Marshal_Winterwunderland.png">WINTERWUNDERLAND</option>
+               </select>
+            </div>
+         </div>
+         <br>
+         <div class="main">
+            <div class="col1">
+               <div><img id="shortyImage" class="profile" src="images/shorty/Shorty.png" style="width: 85%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#shortyImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/shorty/Shorty.png">SHORTY</option>
+                  <option value="images/shorty/Shorty_Graffiti.png">GRAFFITI</option>
+                  <option value="images/shorty/Shorty_Hivemind.png">HIVEMIND</option>
+                  <option value="images/shorty/Shorty_Monarch.png">MONARCH</option>
+                  <optgroup label="ONI">
+                     <option value="images/shorty/Shorty_Oni.png">ONI</option>
+                     <option value="images/shorty/Shorty_Oni_Black.png">ONI (BLACK)</option>
+                     <option value="images/shorty/Shorty_Oni_Green.png">ONI (GREEN)</option>
+                     <option value="images/shorty/Shorty_Oni_White.png">ONI (WHITE)</option>
+                  </optgroup>
+                  <option value="images/shorty/Shorty_Prism_2.png">PRISM II</option>
+                  <option value="images/shorty/Shorty_Ruin.png">RUIN</option>
+                  <option value="images/shorty/Shorty_Snakebite.png">SNAKEBITE (VIPER)</option>
+                  <option value="images/shorty/Shorty_Wasteland.png">WASTELAND</option>
+                  <option value="images/shorty/Shorty_Wunderkind.png">WUNDERKIND (KILLJOY)</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col2">
+               <div><img id="spectreImage" class="profile" src="images/spectre/Spectre.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#spectreImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/spectre/Spectre.png">SPECTRE</option>
+                  <optgroup label="BLASTX">
+                     <option value="images/spectre/Spectre_BlastX.png">BLASTX</option>
+                     <option value="images/spectre/Spectre_BlastX_Black.png">BLASTX (BLACK)</option>
+                     <option value="images/spectre/Spectre_BlastX_Pink.png">BLASTX (PINK)</option>
+                     <option value="images/spectre/Spectre_BlastX_Yellow.png">BLASTX (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_Convex.png">CONVEX</option>
+                  <optgroup label="FORSAKEN">
+                     <option value="images/spectre/Spectre_Forsaken.png">FORSAKEN</option>
+                     <option value="images/spectre/Spectre_Forsaken_Gold.png">FORSAKEN (GOLD)</option>
+                  </optgroup>
+                  <optgroup label="GRAVITATIONAL URANIUM NEUROBLASTER">
+                     <option value="images/spectre/Spectre_GUN.png">G.U.N.</option>
+                     <option value="images/spectre/Spectre_GUN_Black.png">G.U.N. (BLACK)</option>
+                     <option value="images/spectre/Spectre_GUN_Chrome.png">G.U.N. (CHROME)</option>
+                     <option value="images/spectre/Spectre_GUN_RWB.png">G.U.N. (RWB)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_Hivemind.png">HIVEMIND</option>
+                  <option value="images/spectre/Spectre_Horizon.png">HORIZON</option>
+                  <option value="images/spectre/Spectre_Infantry.png">INFANTRY</option>
+                  <optgroup label="INFINITY">
+                     <option value="images/spectre/Spectre_Infinity.png">INFINITY</option>
+                     <option value="images/spectre/Spectre_Infinity_Orange.png">INFINITY (ORANGE)</option>
+                     <option value="images/spectre/Spectre_Infinity_Pink.png">INFINITY (PINK)</option>
+                     <option value="images/spectre/Spectre_Infinity_White.png">INFINITY (WHITE)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_Kingdom.png">KINGDOM</option>
+                  <option value="images/spectre/Spectre_Luxe.png">LUXE</option>
+                  <optgroup label="MAGEPUNK">
+                     <option value="images/spectre/Spectre_Magepunk.png">MAGEPUNK</option>
+                     <option value="images/spectre/Spectre_Magepunk_Green.png">MAGEPUNK (GREEN)</option>
+                     <option value="images/spectre/Spectre_Magepunk_Orange.png">MAGEPUNK (ORANGE)</option>
+                     <option value="images/spectre/Spectre_Magepunk_Purple.png">MAGEPUNK (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_Minima.png">MINIMA</option>
+                  <option value="images/spectre/Spectre_Polyfrog.png">POLYFROG</option>
+                  <optgroup label="PRIME">
+                     <option value="images/spectre/Spectre_Prime.png">PRIME</option>
+                     <option value="images/spectre/Spectre_Prime_Blue.png">PRIME (BLUE)</option>
+                     <option value="images/spectre/Spectre_Prime_Orange.png">PRIME (ORANGE)</option>
+                     <option value="images/spectre/Spectre_Prime_Yellow.png">PRIME (YELLOW)</option>
+                  </optgroup>
+                  <optgroup label="RECON">
+                     <option value="images/spectre/Spectre_Recon.png">RECON</option>
+                     <option value="images/spectre/Spectre_Recon_Blue_Camo.png">RECON (BLUE CAMO)</option>
+                     <option value="images/spectre/Spectre_Recon_Green_Camo.png">RECON (GREEN CAMO)</option>
+                     <option value="images/spectre/Spectre_Recon_Red_Camo.png">RECON (RED CAMO)</option>
+                  </optgroup>
+                  <optgroup label="RUINATION">
+                     <option value="images/spectre/Spectre_Ruination.png">RUINATION</option>
+                     <option value="images/spectre/Spectre_Ruination_Green.png">RUINATION (GREEN)</option>
+                     <option value="images/spectre/Spectre_Ruination_Purple.png">RUINATION (PURPLE)</option>
+                     <option value="images/spectre/Spectre_Ruination_Red_Yellow.png">RUINATION (RED/YELLOW)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_Serenity.png">SERENITY</option>
+                  <optgroup label="SINGULARITY">
+                     <option value="images/spectre/Spectre_Singularity.png">SINGULARITY</option>
+                     <option value="images/spectre/Spectre_Singularity_Blue.png">SINGULARITY (BLUE)</option>
+                     <option value="images/spectre/Spectre_Singularity_Purple.png">SINGULARITY (PURPLE)</option>
+                     <option value="images/spectre/Spectre_Singularity_Red.png">SINGULARITY (RED)</option>
+                  </optgroup>
+                  <optgroup label="SPLINE">
+                     <option value="images/spectre/Spectre_Spline.png">SPLINE</option>
+                     <option value="images/spectre/Spectre_Spline_Blue.png">SPLINE (BLUE)</option>
+                     <option value="images/spectre/Spectre_Spline_Green.png">SPLINE (GREEN)</option>
+                     <option value="images/spectre/Spectre_Spline_Red.png">SPLINE (RED)</option>
+                  </optgroup>
+                  <option value="images/spectre/Spectre_VALORANT_Go_Vol1.png">VALORANT GO VOL1</option>
+                  <option value="images/spectre/Spectre_Wasteland.png">WASTELAND</option>
+                  <option value="images/spectre/Phantom_Winterwunderland.png">WINTERWUNDERLAND</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col3">
+               <div><img id="guardianImage" class="profile" src="images/guardian/Guardian.png" style="width: 80%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#guardianImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/guardian/Guardian.png">GUARDIAN</option>
+                  <optgroup label="EGO">
+                     <option value="images/guardian/Guardian_Ego.png">EGO</option>
+                     <option value="images/guardian/Guardian_Ego_Pink.png">EGO (PINK)</option>
+                     <option value="images/guardian/Guardian_Ego_Red.png">EGO (RED)</option>
+                     <option value="images/guardian/Guardian_Ego_Tan.png">EGO (TAN)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Galleria.png">GALLERIA</option>
+                  <option value="images/guardian/Guardian_Infantry.png">INFANTRY</option>
+                  <optgroup label="INFINITY">
+                     <option value="images/guardian/Guardian_Infinity.png">INFINITY</option>
+                     <option value="images/guardian/Guardian_Infinity_Pink.png">INFINITY (PINK)</option>
+                     <option value="images/guardian/Guardian_Infinity_White.png">INFINITY (WHITE)</option>
+                     <option value="images/guardian/Guardian_Infinity_Yellow.png">INFINITY (YELLOW)</option>
+                  </optgroup>
+                  <optgroup label="JIGSAW">
+                     <option value="images/guardian/Guardian_Jigsaw.png">JIGSAW</option>
+                     <option value="images/guardian/Guardian_Jigsaw_Killjoy.png">JIGSAW (KILLJOY)</option>
+                     <option value="images/guardian/Guardian_Jigsaw_Skye.png">JIGSAW (SKYE)</option>
+                     <option value="images/guardian/Guardian_Jigsaw_Yoru.png">JIGSAW (YORU)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Nebula.png">NEBULA</option>
+                  <optgroup label="ONI">
+                     <option value="images/guardian/Guardian_Oni.png">ONI</option>
+                     <option value="images/guardian/Guardian_Oni_Black.png">ONI (BLACK)</option>
+                     <option value="images/guardian/Guardian_Oni_Green.png">ONI (GREEN)</option>
+                     <option value="images/guardian/Guardian_Oni_White.png">ONI (WHITE)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Polyfox.png">POLYFOX</option>
+                  <optgroup label="PRIME">
+                     <option value="images/guardian/Guardian_Prime.png">PRIME</option>
+                     <option value="images/guardian/Guardian_Prime_Blue.png">PRIME (BLUE)</option>
+                     <option value="images/guardian/Guardian_Prime_Orange.png">PRIME (ORANGE)</option>
+                     <option value="images/guardian/Guardian_Prime_Yellow.png">PRIME (YELLOW)</option>
+                  </optgroup>
+                  <optgroup label="REAVER">
+                     <option value="images/guardian/Guardian_Reaver.png">REAVER</option>
+                     <option value="images/guardian/Guardian_Reaver_Black.png">REAVER (BLACK)</option>
+                     <option value="images/guardian/Guardian_Reaver_Red.png">REAVER (RED)</option>
+                     <option value="images/guardian/Guardian_Reaver_White.png">REAVER (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="RECON">
+                     <option value="images/guardian/Guardian_Recon.png">RECON</option>
+                     <option value="images/guardian/Guardian_Recon_Blue_Camo.png">RECON (BLUE CAMO)</option>
+                     <option value="images/guardian/Guardian_Recon_Green_Camo.png">RECON (GREEN CAMO)</option>
+                     <option value="images/guardian/Guardian_Recon_Red_Camo.png">RECON (RED CAMO)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Ruin.png">RUIN</option>
+                  <optgroup label="RUINATION">
+                     <option value="images/guardian/Guardian_Ruination.png">RUINATION</option>
+                     <option value="images/guardian/Guardian_Ruination_Green.png">RUINATION (GREEN)</option>
+                     <option value="images/guardian/Guardian_Ruination_Purple.png">RUINATION (PURPLE)</option>
+                     <option value="images/guardian/Guardian_Ruination_Red_Yellow.png">RUINATION (RED/YELLOW)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Songsteel.png">SONGSTEEL</option>
+                  <optgroup label="SOVEREIGN">
+                     <option value="images/guardian/Guardian_Sovereign.png">SOVEREIGN</option>
+                     <option value="images/guardian/Guardian_Sovereign_Gold.png">SOVEREIGN (GOLD)</option>
+                     <option value="images/guardian/Guardian_Sovereign_Purple.png">SOVEREIGN (PURPLE)</option>
+                     <option value="images/guardian/Guardian_Sovereign_Silver.png">SOVEREIGN (SILVER)</option>
+                  </optgroup>
+                  <option value="images/guardian/Guardian_Tethered_Realms.png">TETHERED_REALMS</option>
+                  <option value="images/guardian/Guardian_VALORANT_Go_Vol1.png">VALORANT GO VOL1</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col4">
+               <div><img id="operatorImage" class="profile" src="images/operator/Operator.png" style="width: 90%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#operatorImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/operator/Operator.png">OPERATOR</option>
+                  <option value="images/operator/Operator_Cavalier.png">CAVALIER</option>
+                  <option value="images/operator/Operator_Convex.png">CONVEX</option>
+                  <optgroup label="ELDERFLAME">
+                     <option value="images/operator/Operator_Elderflame.png">ELDERFLAME</option>
+                     <option value="images/operator/Operator_Elderflame_Blue.png">ELDERFLAME (BLUE)</option>
+                     <option value="images/operator/Operator_Elderflame_Dark.png">ELDERFLAME (DARK)</option>
+                     <option value="images/operator/Operator_Elderflame_Red.png">ELDERFLAME (RED)</option>
+                  </optgroup>
+                  <optgroup label="FORSAKEN">
+                     <option value="images/operator/Operator_Forsaken.png">FORSAKEN</option>
+                     <option value="images/operator/Operator_Forsaken_Gold.png">FORSAKEN (GOLD)</option>
+                  </optgroup>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/operator/Operator_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/operator/Operator_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/operator/Operator_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/operator/Operator_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <option value="images/operator/Operator_Graffiti.png">GRAFFITI</option>
+                  <optgroup label="GRAVITATIONAL URANIUM NEUROBLASTER">
+                     <option value="images/operator/Operator_GUN.png">G.U.N.</option>
+                     <option value="images/operator/Operator_GUN_Black.png">G.U.N. (BLACK)</option>
+                     <option value="images/operator/Operator_GUN_Chrome.png">G.U.N. (CHROME)</option>
+                     <option value="images/operator/Operator_GUN_RWB.png">G.U.N. (RWB)</option>
+                  </optgroup>
+                  <option value="images/operator/Operator_Infantry.png">INFANTRY</option>
+                  <option value="images/operator/Operator_Ion.png">ION</option>
+                  <option value="images/operator/Operator_K_TAC.png">K/TAC</option>
+                  <option value="images/operator/Operator_Luxe.png">LUXE</option>
+                  <option value="images/operator/Operator_Minima.png">MINIMA</option>
+                  <optgroup label="ORIGIN">
+                     <option value="images/operator/Operator_Origin.png">ORIGIN</option>
+                     <option value="images/operator/Operator_Origin_Green.png">ORIGIN (GREEN)</option>
+                     <option value="images/operator/Operator_Origin_Red.png">ORIGIN (RED)</option>
+                     <option value="images/operator/Operator_Origin_White.png">ORIGIN (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="REAVER">
+                     <option value="images/operator/Operator_Reaver.png">REAVER</option>
+                     <option value="images/operator/Operator_Reaver_Black.png">REAVER (BLACK)</option>
+                     <option value="images/operator/Operator_Reaver_Red.png">REAVER (RED)</option>
+                     <option value="images/operator/Operator_Reaver_White.png">REAVER (WHITE)</option>
+                  </optgroup>
+                  <option value="images/operator/Operator_Red_Alert.png">RED ALERT</option>
+                  <option value="images/operator/Operator_Silvanus.png">SILVANUS</option>
+                  <optgroup label="SENTINELS OF LIGHT">
+                     <option value="images/operator/Operator_SOL.png">S.O.L.</option>
+                     <option value="images/operator/Operator_SOL_Blue_Purple.png">S.O.L. (BLUE/PURPLE)</option>
+                     <option value="images/operator/Operator_SOL_Pink.png">S.O.L. (PINK)</option>
+                     <option value="images/operator/Operator_SOL_Red_Green.png">S.O.L. (RED/GREEN)</option>
+                  </optgroup>
+                  <optgroup label="SPLINE">
+                     <option value="images/operator/Operator_Spline.png">SPLINE</option>
+                     <option value="images/operator/Operator_Spline_Blue.png">SPLINE (BLUE)</option>
+                     <option value="images/operator/Operator_Spline_Green.png">SPLINE (GREEN)</option>
+                     <option value="images/operator/Operator_Spline_Red.png">SPLINE (RED)</option>
+                  </optgroup>
+                  <option value="images/operator/Operator_Tethered_Realms.png">TETHERED_REALMS</option>
+               </select>
+            </div>
+         </div>
+         <br>
+         <div class="main">
+            <div class="col1">
+               <div><img id="frenzyImage" class="profile" src="images/frenzy/Frenzy.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#frenzyImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/frenzy/Frenzy.png">FRENZY</option>
+                  <optgroup label="BLASTX">
+                     <option value="images/frenzy/Frenzy_BlastX.png">BLASTX</option>
+                     <option value="images/frenzy/Frenzy_BlastX_Black.png">BLASTX (BLACK)</option>
+                     <option value="images/frenzy/Frenzy_BlastX_Pink.png">BLASTX (PINK)</option>
+                     <option value="images/frenzy/Frenzy_BlastX_Yellow.png">BLASTX (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/frenzy/Frenzy_Celestial.png">CELESTIAL</option>
+                  <option value="images/frenzy/Frenzy_Couture.png">COUTURE</option>
+                  <optgroup label="ELDERFLAME">
+                     <option value="images/frenzy/Frenzy_Elderflame.png">ELDERFLAME</option>
+                     <option value="images/frenzy/Frenzy_Elderflame_Blue.png">ELDERFLAME (BLUE)</option>
+                     <option value="images/frenzy/Frenzy_Elderflame_Dark.png">ELDERFLAME (DARK)</option>
+                     <option value="images/frenzy/Frenzy_Elderflame_Red.png">ELDERFLAME (RED)</option>
+                  </optgroup>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/frenzy/Frenzy_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/frenzy/Frenzy_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/frenzy/Frenzy_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/frenzy/Frenzy_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <option value="images/frenzy/Frenzy_Horizon.png">HORIZON</option>
+                  <optgroup label="LIGHTWAVE">
+                     <option value="images/frenzy/Frenzy_Lightwave.png">LIGHTWAVE</option>
+                     <option value="images/frenzy/Frenzy_Lightwave_Black.png">LIGHTWAVE (BLACK)</option>
+                     <option value="images/frenzy/Frenzy_Lightwave_Blue.png">LIGHTWAVE (BLUE)</option>
+                     <option value="images/frenzy/Frenzy_Lightwave_Red.png">LIGHTWAVE (RED)</option>
+                  </optgroup>
+                  <option value="images/frenzy/Frenzy_Monarch.png">MONARCH</option>
+                  <optgroup label="ORIGIN">
+                     <option value="images/frenzy/Frenzy_Origin.png">ORIGIN</option>
+                     <option value="images/frenzy/Frenzy_Origin_Purple.png">ORIGIN (PURPLE)</option>
+                     <option value="images/frenzy/Frenzy_Origin_Red.png">ORIGIN (RED)</option>
+                     <option value="images/frenzy/Frenzy_Origin_White.png">ORIGIN (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="PRIME 2.0">
+                     <option value="images/frenzy/Frenzy_Prime_2.png">PRIME 2.0</option>
+                     <option value="images/frenzy/Frenzy_Prime_2_Gold.png">PRIME 2.0 (GOLD)</option>
+                     <option value="images/frenzy/Frenzy_Prime_2_Green.png">PRIME 2.0 (GREEN)</option>
+                     <option value="images/frenzy/Frenzy_Prime_2_Orange.png">PRIME 2.0 (ORANGE)</option>
+                  </optgroup>
+                  <option value="images/frenzy/Frenzy_Ragnarocker.png">RAGNAROCKER (BREACH)</option>
+                  <option value="images/frenzy/Frenzy_Rush.png">RUSH</option>
+                  <option value="images/frenzy/Frenzy_Sensation.png">SENSATION</option>
+                  <option value="images/frenzy/Frenzy_Spitfire.png">SPITFIRE (PHOENIX)</option>
+                  <option value="images/frenzy/Frenzy_Swooping.png">SWOOPING (SKYE)</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col2">
+               <div><img id="buckyImage" class="profile" src="images/bucky/Bucky.png" style="width: 85%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#buckyImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/bucky/Bucky.png">BUCKY</option>
+                  <option value="images/bucky/Bucky_Cavalier.png">CAVALIER</option>
+                  <option value="images/bucky/Bucky_Galleria.png">GALLERIA</option>
+                  <option value="images/bucky/Bucky_Graffiti.png">GRAFFITI</option>
+                  <optgroup label="GRAVITATIONAL URANIUM NEUROBLASTER">
+                     <option value="images/bucky/Bucky_GUN.png">G.U.N.</option>
+                     <option value="images/bucky/Bucky_GUN_Black.png">G.U.N. (BLACK)</option>
+                     <option value="images/bucky/Bucky_GUN_Chrome.png">G.U.N. (CHROME)</option>
+                     <option value="images/bucky/Bucky_GUN_RWB.png">G.U.N. (RWB)</option>
+                  </optgroup>
+                  <option value="images/bucky/Bucky_Horizon.png">HORIZON</option>
+                  <option value="images/bucky/Bucky_Ion.png">ION</option>
+                  <option value="images/bucky/Bucky_Kingdom.png">KINGDOM</option>
+                  <optgroup label="LIGHTWAVE">
+                     <option value="images/bucky/Bucky_Lightwave.png">LIGHTWAVE</option>
+                     <option value="images/bucky/Bucky_Lightwave_Blue.png">LIGHTWAVE (BLUE)</option>
+                     <option value="images/bucky/Bucky_Lightwave_Gray.png">LIGHTWAVE (GRAY)</option>
+                     <option value="images/bucky/Bucky_Lightwave_Red.png">LIGHTWAVE (RED)</option>
+                  </optgroup>
+                  <optgroup label="MAGEPUNK">
+                     <option value="images/bucky/Bucky_Magepunk.png">MAGEPUNK</option>
+                     <option value="images/bucky/Bucky_Magepunk_Green.png">MAGEPUNK (GREEN)</option>
+                     <option value="images/bucky/Bucky_Magepunk_Orange.png">MAGEPUNK (ORANGE)</option>
+                     <option value="images/bucky/Bucky_Magepunk_Purple.png">MAGEPUNK (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/bucky/Bucky_Monarch.png">MONARCH</option>
+                  <optgroup label="ONI">
+                     <option value="images/bucky/Bucky_Oni.png">ONI</option>
+                     <option value="images/bucky/Bucky_Oni_Black.png">ONI (BLACK)</option>
+                     <option value="images/bucky/Bucky_Oni_Green.png">ONI (GREEN)</option>
+                     <option value="images/bucky/Bucky_Oni_White.png">ONI (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="ORIGIN">
+                     <option value="images/bucky/Bucky_Origin.png">ORIGIN</option>
+                     <option value="images/bucky/Bucky_Origin_Green.png">ORIGIN (GREEN)</option>
+                     <option value="images/bucky/Bucky_Origin_Red.png">ORIGIN (RED)</option>
+                     <option value="images/bucky/Bucky_Origin_White.png">ORIGIN (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="PRIME 2.0">
+                     <option value="images/bucky/Bucky_Prime_2.png">PRIME 2.0</option>
+                     <option value="images/bucky/Bucky_Prime_2_Gold.png">PRIME 2.0 (GOLD)</option>
+                     <option value="images/bucky/Bucky_Prime_2_Green.png">PRIME 2.0 (GREEN)</option>
+                     <option value="images/bucky/Bucky_Prime_2_Orange.png">PRIME 2.0 (ORANGE)</option>
+                  </optgroup>
+                  <option value="images/bucky/Bucky_Prism_2.png">PRISM II</option>
+                  <option value="images/bucky/Bucky_Red_Alert.png">RED ALERT</option>
+                  <optgroup label="SURGE">
+                     <option value="images/bucky/Bucky_Surge.png">SURGE</option>
+                     <option value="images/bucky/Bucky_Surge_Black.png">SURGE (BLACK)</option>
+                     <option value="images/bucky/Bucky_Surge_Blue.png">SURGE (BLUE)</option>
+                     <option value="images/bucky/Bucky_Surge_Yellow.png">SURGE (YELLOW)</option>
+                  </optgroup>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col3">
+               <div><img id="phantomImage" class="profile" src="images/phantom/Phantom.png" style="width: 80%;"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#phantomImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/phantom/Phantom.png">PHANTOM</option>
+                  <optgroup label="BLASTX">
+                     <option value="images/phantom/Phantom_BlastX.png">BLASTX</option>
+                     <option value="images/phantom/Phantom_BlastX_Black.png">BLASTX (BLACK)</option>
+                     <option value="images/phantom/Phantom_BlastX_Pink.png">BLASTX (PINK)</option>
+                     <option value="images/phantom/Phantom_BlastX_Yellow.png">BLASTX (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/phantom/Phantom_Celestial.png">CELESTIAL</option>
+                  <option value="images/phantom/Phantom_Galleria.png">GALLERIA</option>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/phantom/Phantom_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/phantom/Phantom_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/phantom/Phantom_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/phantom/Phantom_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <optgroup label="INFINITY">
+                     <option value="images/phantom/Phantom_Infinity.png">INFINITY</option>
+                     <option value="images/phantom/Phantom_Infinity_Pink.png">INFINITY (PINK)</option>
+                     <option value="images/phantom/Phantom_Infinity_White.png">INFINITY (WHITE)</option>
+                     <option value="images/phantom/Phantom_Infinity_Yellow.png">INFINITY (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/phantom/Phantom_Ion.png">ION</option>
+                  <option value="images/phantom/Phantom_Kingdom.png">KINGDOM</option>
+                  <optgroup label="LIGHTWAVE">
+                     <option value="images/phantom/Phantom_Lightwave.png">LIGHTWAVE</option>
+                     <option value="images/phantom/Phantom_Lightwave_Black.png">LIGHTWAVE (BLACK)</option>
+                     <option value="images/phantom/Phantom_Lightwave_Blue.png">LIGHTWAVE (BLUE)</option>
+                     <option value="images/phantom/Phantom_Lightwave_Red.png">LIGHTWAVE (RED)</option>
+                  </optgroup>
+                  <option value="images/phantom/Phantom_Minima.png">MINIMA</option>
+                  <option value="images/phantom/Phantom_Nebula.png">NEBULA</option>
+                  <optgroup label="ONI">
+                     <option value="images/phantom/Phantom_Oni.png">ONI</option>
+                     <option value="images/phantom/Phantom_Oni_Black.png">ONI (BLACK)</option>
+                     <option value="images/phantom/Phantom_Oni_Green.png">ONI (GREEN)</option>
+                     <option value="images/phantom/Phantom_Oni_White.png">ONI (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="PRIME 2.0">
+                     <option value="images/phantom/Phantom_Prime_2.png">PRIME 2.0</option>
+                     <option value="images/phantom/Phantom_Prime_2_Gold.png">PRIME 2.0 (GOLD)</option>
+                     <option value="images/phantom/Phantom_Prime_2_Green.png">PRIME 2.0 (GREEN)</option>
+                     <option value="images/phantom/Phantom_Prime_2_Orange.png">PRIME 2.0 (ORANGE)</option>
+                  </optgroup>
+                  <optgroup label="RECON">
+                     <option value="images/phantom/Phantom_Recon.png">RECON</option>
+                     <option value="images/phantom/Phantom_Recon_Blue_Camo.png">RECON (BLUE CAMO)</option>
+                     <option value="images/phantom/Phantom_Recon_Green_Camo.png">RECON (GREEN CAMO)</option>
+                     <option value="images/phantom/Phantom_Recon_Red_Camo.png">RECON (RED CAMO)</option>
+                  </optgroup>
+                  <optgroup label="RUINATION">
+                     <option value="images/phantom/Phantom_Ruination.png">RUINATION</option>
+                     <option value="images/phantom/Phantom_Ruination_Green.png">RUINATION (GREEN)</option>
+                     <option value="images/phantom/Phantom_Ruination_Purple.png">RUINATION (PURPLE)</option>
+                     <option value="images/phantom/Phantom_Ruination_Red_Yellow.png">RUINATION (RED/YELLOW)</option>
+                  </optgroup>
+                  <option value="images/phantom/Phantom_Rush.png">RUSH</option>
+                  <option value="images/phantom/Phantom_Serenity.png">SERENITY</option>
+                  <option value="images/phantom/Phantom_Silvanus.png">SILVANUS</option>
+                  <optgroup label="SINGULARITY">
+                     <option value="images/phantom/Phantom_Singularity.png">SINGULARITY</option>
+                     <option value="images/phantom/Phantom_Singularity_Blue.png">SINGULARITY (BLUE)</option>
+                     <option value="images/phantom/Phantom_Singularity_Purple.png">SINGULARITY (PURPLE)</option>
+                     <option value="images/phantom/Phantom_Singularity_Red.png">SINGULARITY (RED)</option>
+                  </optgroup>
+                  <option value="images/phantom/Phantom_Smite.png">SMITE</option>
+                  <option value="images/phantom/Phantom_VALORANT_Go_Vol1.png">VALORANT GO VOL1</option>
+                  <option value="images/phantom/Phantom_Winterwunderland.png">WINTERWUNDERLAND</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col4">
+               <div><img id="aresImage" class="profile" src="images/ares/Ares.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#aresImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/ares/Ares.png">ARES</option>
+                  <option value="images/ares/Ares_Aristocrat.png">ARISTOCRAT</option>
+                  <option value="images/ares/Ares_Celestial.png">CELESTIAL</option>
+                  <option value="images/ares/Ares_Hivemind.png">HIVEMIND</option>
+                  <option value="images/ares/Ares_Infantry.png">INFANTRY</option>
+                  <optgroup label="JIGSAW">
+                     <option value="images/ares/Ares_Jigsaw.png">JIGSAW</option>
+                     <option value="images/ares/Ares_Jigsaw_Astra.png">JIGSAW (ASTRA)</option>
+                     <option value="images/ares/Ares_Jigsaw_Skye.png">JIGSAW (SKYE)</option>
+                     <option value="images/ares/Ares_Jigsaw_Yoru.png">JIGSAW (YORU)</option>
+                  <option value="images/ares/Ares_Minima.png">MINIMA</option>
+                  <option value="images/ares/Ares_Nebula.png">NEBULA</option>
+                  <option value="images/ares/Ares_Outpost.png">OUTPOST</option>
+                  <option value="images/ares/Ares_Polyfrog.png">POLYFROG</option>
+                  <option value="images/ares/Ares_Rush.png">RUSH</option>
+                  <option value="images/ares/Ares_Sakura.png">SAKURA</option>
+                  <optgroup label="SINGULARITY">
+                     <option value="images/ares/Ares_Singularity.png">SINGULARITY</option>
+                     <option value="images/ares/Ares_Singularity_Blue.png">SINGULARITY (BLUE)</option>
+                     <option value="images/ares/Ares_Singularity_Purple.png">SINGULARITY (PURPLE)</option>
+                     <option value="images/ares/Ares_Singularity_Red.png">SINGULARITY (RED)</option>
+                  </optgroup>
+                  <optgroup label="SENTINELS OF LIGHT">
+                     <option value="images/ares/Ares_SOL.png">S.O.L.</option>
+                     <option value="images/ares/Ares_SOL_Blue_Purple.png">S.O.L. (BLUE/PURPLE)</option>
+                     <option value="images/ares/Ares_SOL_Pink.png">S.O.L. (PINK)</option>
+                     <option value="images/ares/Ares_SOL_Red_Green.png">S.O.L. (RED/GREEN)</option>
+                  </optgroup>
+               </select>
+            </div>
+         </div>
+         <br>
+         <div class="main">
+            <div class="col1">
+               <div><img id="ghostImage" class="profile" src="images/ghost/Ghost.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#ghostImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/ghost/Ghost.png">GHOST</option>
+                  <option value="images/ghost/Ghost_Cavalier.png">CAVALIER</option>
+                  <option value="images/ghost/Ghost_Depths.png">DEPTHS</option>
+                  <option value="images/ghost/Ghost_DOT_EXE.png">DOT EXE</option>
+                  <option value="images/ghost/Ghost_Eclipse.png">ECLIPSE (ASTRA)</option>
+                  <optgroup label="EGO">
+                     <option value="images/ghost/Ghost_Ego.png">EGO</option>
+                     <option value="images/ghost/Ghost_Ego_Pink.png">EGO (PINK)</option>
+                     <option value="images/ghost/Ghost_Ego_Red.png">EGO (RED)</option>
+                     <option value="images/ghost/Ghost_Ego_Tan.png">EGO (TAN)</option>
+                  </optgroup>
+                  <option value="images/ghost/Ghost_Hush.png">HUSH (CYPHER)</option>
+                  <option value="images/ghost/Ghost_Infantry.png">INFANTRY</option>
+                  <optgroup label="JIGSAW">
+                     <option value="images/ghost/Ghost_Jigsaw.png">JIGSAW</option>
+                     <option value="images/ghost/Ghost_Jigsaw_Astra.png">JIGSAW (ASTRA)</option>
+                     <option value="images/ghost/Ghost_Jigsaw_Killjoy.png">JIGSAW (KILLJOY)</option>
+                     <option value="images/ghost/Ghost_Jigsaw_Skye.png">JIGSAW (SKYE)</option>
+                  </optgroup>
+                  <option value="images/ghost/Ghost_Luxe.png">LUXE</option>
+                  <optgroup label="MAGEPUNK">
+                     <option value="images/ghost/Ghost_Magepunk.png">MAGEPUNK</option>
+                     <option value="images/ghost/Ghost_Magepunk_Green.png">MAGEPUNK (GREEN)</option>
+                     <option value="images/ghost/Ghost_Magepunk_Orange.png">MAGEPUNK (ORANGE)</option>
+                     <option value="images/ghost/Ghost_Magepunk_Purple.png">MAGEPUNK (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/ghost/Ghost_Outpost.png">OUTPOST</option>
+                  <optgroup label="RECON">
+                     <option value="images/ghost/Ghost_Recon.png">RECON</option>
+                     <option value="images/ghost/Ghost_Recon_Blue_Camo.png">RECON (BLUE CAMO)</option>
+                     <option value="images/ghost/Ghost_Recon_Green_Camo.png">RECON (GREEN CAMO)</option>
+                     <option value="images/ghost/Ghost_Recon_Red_Camo.png">RECON (RED CAMO)</option>
+                  </optgroup>
+                  <optgroup label="RUINATION">
+                     <option value="images/ghost/Ghost_Ruination.png">RUINATION</option>
+                     <option value="images/ghost/Ghost_Ruination_Green.png">RUINATION (GREEN)</option>
+                     <option value="images/ghost/Ghost_Ruination_Purple.png">RUINATION (PURPLE)</option>
+                     <option value="images/ghost/Ghost_Ruination_Red_Yellow.png">RUINATION (RED/YELLOW)</option>
+                  </optgroup>
+                  <option value="images/ghost/Ghost_Serenity.png">SERENITY</option>
+                  <option value="images/ghost/Ghost_Soul_Silencer.png">SOUL SILENCER (OMEN)</option>
+                  <optgroup label="SOVEREIGN">
+                     <option value="images/ghost/Ghost_Sovereign.png">SOVEREIGN</option>
+                     <option value="images/ghost/Ghost_Sovereign_Gold.png">SOVEREIGN (GOLD)</option>
+                     <option value="images/ghost/Ghost_Sovereign_Purple.png">SOVEREIGN (PURPLE)</option>
+                     <option value="images/ghost/Ghost_Sovereign_Silver.png">SOVEREIGN (SILVER)</option>
+                  </optgroup>
+                  <option value="images/ghost/Ghost_Tethered_Realms.png">TETHERED_REALMS</option>
+                  <option value="images/ghost/Ghost_VALORANT_Go_Vol1.png">VALORANT GO VOL1</option>
+                  <option value="images/ghost/Ghost_Vendetta.png">VENDETTA (REYNA)</option>
+                  <option value="images/ghost/Ghost_Winterwunderland.png">WINTERWUNDERLAND</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col2">
+               <div><img id="judgeImage" class="profile" src="images/judge/Judge.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#judgeImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/judge/Judge.png">JUDGE</option>
+                  <option value="images/judge/Judge_Celestial.png">CELESTIAL</option>
+                  <option value="images/judge/Judge_Convex.png">CONVEX</option>
+                  <option value="images/judge/Judge_DOT_EXE.png">DOT EXE</option>
+                  <optgroup label="ELDERFLAME">
+                     <option value="images/judge/Judge_Elderflame.png">ELDERFLAME</option>
+                     <option value="images/judge/Judge_Elderflame_Blue.png">ELDERFLAME (BLUE)</option>
+                     <option value="images/judge/Judge_Elderflame_Dark.png">ELDERFLAME (DARK)</option>
+                     <option value="images/judge/Judge_Elderflame_Red.png">ELDERFLAME (RED)</option>
+                  </optgroup>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/judge/Judge_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/judge/Judge_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/judge/Judge_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/judge/Judge_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <optgroup label="JIGSAW">
+                     <option value="images/judge/Judge_Jigsaw.png">JIGSAW</option>
+                     <option value="images/judge/Judge_Jigsaw_Astra.png">JIGSAW (ASTRA)</option>
+                     <option value="images/judge/Judge_Jigsaw_Skye.png">JIGSAW (SKYE)</option>
+                     <option value="images/judge/Judge_Jigsaw_Yoru.png">JIGSAW (YORU)</option>
+                  </optgroup>
+                  <option value="images/judge/Judge_Luxe.png">LUXE</option>
+                  <option value="images/judge/Judge_Outpost.png">OUTPOST</option>
+                  <option value="images/judge/Judge_Polyfox.png">POLYFOX</option>
+                  <optgroup label="PRISM III">
+                     <option value="images/judge/Judge_Prism_3.png">PRISM III</option>
+                     <option value="images/judge/Judge_Prism_3_Green.png">PRISM III (GREEN)</option>
+                     <option value="images/judge/Judge_Prism_3_Pink.png">PRISM III (PINK)</option>
+                     <option value="images/judge/Judge_Prism_3_Purple.png">PRISM III (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/judge/Judge_Rush.png">RUSH</option>
+                  <option value="images/judge/Judge_Sensation.png">SENSATION</option>
+                  <option value="images/judge/Judge_Serenity.png">SERENITY</option>
+                  <option value="images/judge/Judge_Smite.png">SMITE</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col3">
+               <div><img id="vandalImage" class="profile" src="images/vandal/Vandal.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#vandalImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/vandal/Vandal.png">VANDAL</option>
+                  <option value="images/vandal/Vandal_Aristocrat.png">ARISTOCRAT</option>
+                  <option value="images/vandal/Vandal_Cavalier.png">CAVALIER</option>
+                  <option value="images/vandal/Vandal_Depths.png">DEPTHS</option>
+                  <option value="images/vandal/Vandal_DOT_EXE.png">DOT EXE</option>
+                  <optgroup label="EGO">
+                     <option value="images/vandal/Vandal_Ego.png">EGO</option>
+                     <option value="images/vandal/Vandal_Ego_Pink.png">EGO (PINK)</option>
+                     <option value="images/vandal/Vandal_Ego_Red.png">EGO (RED)</option>
+                     <option value="images/vandal/Vandal_Ego_Tan.png">EGO (TAN)</option>
+                  </optgroup>
+                  <optgroup label="ELDERFLAME">
+                     <option value="images/vandal/Vandal_Elderflame.png">ELDERFLAME</option>
+                     <option value="images/vandal/Vandal_Elderflame_Blue.png">ELDERFLAME (BLUE)</option>
+                     <option value="images/vandal/Vandal_Elderflame_Dark.png">ELDERFLAME (DARK)</option>
+                     <option value="images/vandal/Vandal_Elderflame_Red.png">ELDERFLAME (RED)</option>
+                  </optgroup>
+                  <optgroup label="FORSAKEN">
+                     <option value="images/vandal/Vandal_Forsaken.png">FORSAKEN</option>
+                     <option value="images/vandal/Vandal_Forsaken_Gold.png">FORSAKEN (GOLD)</option>
+                  </optgroup>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/vandal/Vandal_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/vandal/Vandal_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/vandal/Vandal_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/vandal/Vandal_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <option value="images/vandal/Vandal_Hivemind.png">HIVEMIND</option>
+                  <option value="images/vandal/Vandal_Horizon.png">HORIZON</option>
+                  <option value="images/vandal/Vandal_K_TAC.png">K/TAC</option>
+                  <option value="images/vandal/Vandal_Luxe.png">LUXE</option>
+                  <optgroup label="ORIGIN">
+                     <option value="images/vandal/Vandal_Origin.png">ORIGIN</option>
+                     <option value="images/vandal/Vandal_Origin_Green.png">ORIGIN (GREEN)</option>
+                     <option value="images/vandal/Vandal_Origin_Red.png">ORIGIN (RED)</option>
+                     <option value="images/vandal/Vandal_Origin_White.png">ORIGIN (WHITE)</option>
+                  </optgroup>
+                  <optgroup label="PRIME">
+                     <option value="images/vandal/Vandal_Prime.png">PRIME</option>
+                     <option value="images/vandal/Vandal_Prime_Blue.png">PRIME (BLUE)</option>
+                     <option value="images/vandal/Vandal_Prime_Orange.png">PRIME (ORANGE)</option>
+                     <option value="images/vandal/Vandal_Prime_Yellow.png">PRIME (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/vandal/Vandal_Prism_2.png">PRISM II</option>
+                  <optgroup label="REAVER">
+                     <option value="images/vandal/Vandal_Reaver.png">REAVER</option>
+                     <option value="images/vandal/Vandal_Reaver_Black.png">REAVER (BLACK)</option>
+                     <option value="images/vandal/Vandal_Reaver_Red.png">REAVER (RED)</option>
+                     <option value="images/vandal/Vandal_Reaver_White.png">REAVER (WHITE)</option>
+                  </optgroup>
+                  <option value="images/vandal/Vandal_Ruin.png">RUIN</option>
+                  <option value="images/vandal/Vandal_Sakura.png">SAKURA</option>
+                  <option value="images/vandal/Vandal_Sensation.png">SENSATION</option>
+                  <option value="images/vandal/Vandal_Silvanus.png">SILVANUS</option>
+                  <optgroup label="SENTINELS OF LIGHT">
+                     <option value="images/vandal/Vandal_SOL.png">S.O.L.</option>
+                     <option value="images/vandal/Vandal_SOL_Blue_Purple.png">S.O.L. (BLUE/PURPLE)</option>
+                     <option value="images/vandal/Vandal_SOL_Pink.png">S.O.L. (PINK)</option>
+                     <option value="images/vandal/Vandal_SOL_Red_Green.png">S.O.L. (RED/GREEN)</option>
+                  </optgroup>
+                  <option value="images/vandal/Vandal_Tethered_Realms.png">TETHERED_REALMS</option>
+                  <option value="images/vandal/Vandal_Wasteland.png">WASTELAND</option>
+                  <option value="images/vandal/Vandal_Winterwunderland.png">WINTERWUNDERLAND</option>
+               </select>
+            </div>
+         </div>
+         <div class="main">
+            <div class="col4">
+               <div><img id="odinImage" class="profile" src="images/odin/Odin.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#odinImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/odin/Odin.png">ODIN</option>
+                  <optgroup label="BLASTX">
+                     <option value="images/odin/Odin_BlastX.png">BLASTX</option>
+                     <option value="images/odin/Odin_BlastX_Black.png">BLASTX (BLACK)</option>
+                     <option value="images/odin/Odin_BlastX_Pink.png">BLASTX (PINK)</option>
+                     <option value="images/odin/Odin_BlastX_Yellow.png">BLASTX (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/odin/Odin_DOT_EXE.png">DOT EXE</option>
+                  <optgroup label="GLITCHPOP">
+                     <option value="images/odin/Odin_Glitchpop.png">GLITCHPOP</option>
+                     <option value="images/odin/Odin_Glitchpop_Blue.png">GLITCHPOP (BLUE)</option>
+                     <option value="images/odin/Odin_Glitchpop_Gold.png">GLITCHPOP (GOLD)</option>
+                     <option value="images/odin/Odin_Glitchpop_Red.png">GLITCHPOP (RED)</option>
+                  </optgroup>
+                  <option value="images/odin/Odin_Graffiti.png">GRAFFITI</option>
+                  <optgroup label="LIGHTWAVE">
+                     <option value="images/odin/Odin_Lightwave.png">LIGHTWAVE</option>
+                     <option value="images/odin/Odin_Lightwave_Black.png">LIGHTWAVE (BLACK)</option>
+                     <option value="images/odin/Odin_Lightwave_Blue.png">LIGHTWAVE (BLUE)</option>
+                     <option value="images/odin/Odin_Lightwave_Red.png">LIGHTWAVE (RED)</option>
+                  </optgroup>
+                  <optgroup label="PRIME 2.0">
+                     <option value="images/odin/Odin_Prime_2.png">PRIME 2.0</option>
+                     <option value="images/odin/Odin_Prime_2_Gold.png">PRIME 2.0 (GOLD)</option>
+                     <option value="images/odin/Odin_Prime_2_Green.png">PRIME 2.0 (GREEN)</option>
+                     <option value="images/odin/Odin_Prime_2_Orange.png">PRIME 2.0 (ORANGE)</option>
+                  </optgroup>
+                  <optgroup label="PRISM III">
+                     <option value="images/odin/Odin_Prism_3.png">PRISM III</option>
+                     <option value="images/odin/Odin_Prism_3_Green.png">PRISM III (GREEN)</option>
+                     <option value="images/odin/Odin_Prism_3_Pink.png">PRISM III (PINK)</option>
+                     <option value="images/odin/Odin_Prism_3_Purple.png">PRISM III (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/odin/Odin_Sensation.png">SENSATION</option>
+                  <option value="images/odin/Odin_Smite.png">SMITE</option>
+               </select>
+            </div>
+         </div>
+         <br>
+         <div class="bottom">
+            <div class="col1">
+               <div><img id="sheriffImage" class="profile" src="images/sheriff/Sheriff.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#sheriffImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/sheriff/Sheriff.png">SHERIFF</option>
+                  <option value="images/sheriff/Sheriff_Aristocrat.png">ARISTOCRAT</option>
+                  <option value="images/sheriff/Sheriff_Convex.png">CONVEX</option>
+                  <option value="images/sheriff/Sheriff_Death_Wish.png">DEATH WISH (YORU)</option>
+                  <option value="images/sheriff/Sheriff_Game_Over.png">GAME OVER (JETT)</option>
+                  <option value="images/sheriff/Sheriff_Ion.png">ION</option>
+                  <option value="images/sheriff/Sheriff_K_TAC.png"><K/TAC>/option>
+                  <optgroup label="LIGHTWAVE">
+                     <option value="images/sheriff/Sheriff_Lightwave.png">LIGHTWAVE</option>
+                     <option value="images/sheriff/Sheriff_Lightwave_Black.png">LIGHTWAVE (BLACK)</option>
+                     <option value="images/sheriff/Sheriff_Lightwave_Blue.png">LIGHTWAVE (BLUE)</option>
+                     <option value="images/sheriff/Sheriff_Lightwave_Red.png">LIGHTWAVE (RED)</option>
+                  </optgroup>
+                  <option value="images/sheriff/Sheriff_Minima.png">MINIMA</option>
+                  <option value="images/sheriff/Sheriff_Nebula.png">NEBULA</option>
+                  <option value="images/sheriff/Sheriff_Peacekeeper.png">PEACEKEEPER (BRIMSTONE)</option>
+                  <option value="images/sheriff/Sheriff_Polyfox.png">POLYFOX</option>
+                  <option value="images/sheriff/Sheriff_Polyfrog.png">POLYFROG</option>
+                  <option value="images/sheriff/Sheriff_Prism_2.png">PRISM II</option>
+                  <option value="images/sheriff/Sheriff_Protektor.png">PROTEKTOR (SOVA)</option>
+                  <optgroup label="REAVER">
+                     <option value="images/sheriff/Sheriff_Reaver.png">REAVER</option>
+                     <option value="images/sheriff/Sheriff_Reaver_Black.png">REAVER (BLACK)</option>
+                     <option value="images/sheriff/Sheriff_Reaver_Red.png">REAVER (RED)</option>
+                     <option value="images/sheriff/Sheriff_Reaver_White.png">REAVER (WHITE)</option>
+                  </optgroup>
+                  <option value="images/sheriff/Sheriff_Sakura.png">SAKURA</option>
+                  <option value="images/sheriff/Sheriff_Silvanus.png">SILVANUS</option>
+                  <optgroup label="SINGULARITY">
+                     <option value="images/sheriff/Sheriff_Singularity.png">SINGULARITY</option>
+                     <option value="images/sheriff/Sheriff_Singularity_Blue.png">SINGULARITY (BLUE)</option>
+                     <option value="images/sheriff/Sheriff_Singularity_Purple.png">SINGULARITY (PURPLE)</option>
+                     <option value="images/sheriff/Sheriff_Singularity_Red.png">SINGULARITY (RED)</option>
+                  </optgroup>
+                  <optgroup label="SENTINELS OF LIGHT">
+                     <option value="images/sheriff/Sheriff_SOL.png">S.O.L.</option>
+                     <option value="images/sheriff/Sheriff_SOL_Blue_Purple.png">S.O.L. (BLUE/PURPLE)</option>
+                     <option value="images/sheriff/Sheriff_SOL_Pink.png">S.O.L. (PINK)</option>
+                     <option value="images/sheriff/Sheriff_SOL_Red_Green.png">S.O.L. (RED/GREEN)</option>
+                  </optgroup>
+                  <optgroup label="SURGE">
+                     <option value="images/sheriff/Sheriff_Surge.png">SURGE</option>
+                     <option value="images/sheriff/Sheriff_Surge_Black.png">SURGE (BLACK)</option>
+                     <option value="images/sheriff/Sheriff_Surge_Blue.png">SURGE (BLUE)</option>
+                     <option value="images/sheriff/Sheriff_Surge_Yellow.png">SURGE (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/sheriff/Sheriff_Wasteland.png">WASTELAND</option>
+               </select>
+            </div>
+         </div>
+         <div class="bottom meleeDiv">
+            <div class="col4">
+               <div><img id="meleeImage" class="profile" src="images/melee/Melee.png"></div>
+            </div>
+            <div class="select-dropdown">
+               <select onchange="$('#meleeImage').attr('src', this.options[this.selectedIndex].value);">
+                  <option value="images/melee/Melee.png">MELEE</option>
+                  <optgroup label="BLASTX">
+                     <option value="images/melee/Melee_BlastX.png">BLASTX</option>
+                     <option value="images/melee/Melee_BlastX_Black.png">BLASTX (BLACK)</option>
+                     <option value="images/melee/Melee_BlastX_Pink.png">BLASTX (PINK)</option>
+                     <option value="images/melee/Melee_BlastX_Yellow.png">BLASTX (YELLOW)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Celestial.png">CELESTIAL</option>
+                  <optgroup label="EGO">
+                     <option value="images/melee/Melee_Ego.png">EGO</option>
+                     <option value="images/melee/Melee_Ego_Pink.png">EGO (PINK)</option>
+                     <option value="images/melee/Melee_Ego_Red.png">EGO (RED)</option>
+                     <option value="images/melee/Melee_Ego_Tan.png">EGO (TAN)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Elderflame.png">ELDERFLAME</option>
+                  <option value="images/melee/Melee_Forsaken.png">FORSAKEN</option>
+                  <option value="images/melee/Melee_Glitchpop_Axe.png">GLITCHPOP (AXE</option>
+                  <option value="images/melee/Melee_Glitchpop_Dagger.png">GLITCHPOP (DAGGER</option>
+                  <option value="images/melee/Melee_GUN.png">G.U.N.</option>
+                  <option value="images/melee/Melee_Hivemind.png">HIVEMIND</option>
+                  <option value="images/melee/Melee_Ion.png">ION</option>
+                  <option value="images/melee/Melee_K_TAC.png">K/TAC</option>
+                  <option value="images/melee/Melee_Kingdom.png">KINGDOM</option>
+                  <option value="images/melee/Melee_Luxe.png">LUXE</option>
+                  <optgroup label="MAGEPUNK">
+                     <option value="images/melee/Melee_Magepunk.png">MAGEPUNK</option>
+                     <option value="images/melee/Melee_Magepunk_Green.png">MAGEPUNK (GREEN)</option>
+                     <option value="images/melee/Melee_Magepunk_Orange.png">MAGEPUNK (ORANGE)</option>
+                     <option value="images/melee/Melee_Magepunk_Purple.png">MAGEPUNK (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Nebula.png">NEBULA</option>
+                  <option value="images/melee/Melee_Oni.png">ONI</option>
+                  <option value="images/melee/Melee_Origin.png">ORIGIN</option>
+                  <option value="images/melee/Melee_Outpost.png">OUTPOST</option>
+                  <option value="images/melee/Melee_Prime.png">PRIME</option>
+                  <option value="images/melee/Melee_Prime_2.png">PRIME 2.0</option>
+                  <optgroup label="PRISM III">
+                     <option value="images/melee/Melee_Prism_3.png">PRISM III</option>
+                     <option value="images/melee/Melee_Prism_3_Green.png">PRISM III (GREEN)</option>
+                     <option value="images/melee/Melee_Prism_3_Pink.png">PRISM III (PINK)</option>
+                     <option value="images/melee/Melee_Prism_3_Purple.png">PRISM III (PURPLE)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Reaver.png">REAVER</option>
+                  <optgroup label="RECON">
+                     <option value="images/melee/Melee_Recon.png">RECON</option>
+                     <option value="images/melee/Melee_Recon_Blue_Camo.png">RECON (BLUE CAMO)</option>
+                     <option value="images/melee/Melee_Recon_Green_Camo.png">RECON (GREEN CAMO)</option>
+                     <option value="images/melee/Melee_Recon_Red_Camo.png">RECON (RED CAMO)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Ruin.png">RUIN</option>
+                  <optgroup label="RUINATION">
+                     <option value="images/melee/Melee_Ruination.png">RUINATION</option>
+                     <option value="images/melee/Melee_Ruination_Full.png">RUINATION (FULL)</option>
+                     <option value="images/melee/Melee_Ruination_Green.png">RUINATION (GREEN)</option>
+                     <option value="images/melee/Melee_Ruination_Purple.png">RUINATION (PURPLE)</option>
+                     <option value="images/melee/Melee_Ruination_Red_Yellow.png">RUINATION (RED/YELLOW)</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_Singularity.png">SINGULARITY</option>
+                  <option value="images/melee/Melee_Smite.png">SMITE</option>
+                  <optgroup label="SENTINELS OF LIGHT">
+                     <option value="images/melee/Melee_SOL.png">S.O.L.</option>
+                     <option value="images/melee/Melee_SOL_Blue_Purple.png">S.O.L. (BLUE/PURPLE)</option>
+                     <option value="images/melee/Melee_SOL_Pink.png">S.O.L. (PINK)</option>
+                     <option value="images/melee/Melee_SOL_Red_Green.png">S.O.L. (RED/GREEN)</option>
+                  <option value="images/melee/Melee_Songsteel.png">SONGSTEEL</option>
+                  <option value="images/melee/Melee_Sovereign.png">SOVEREIGN</option>
+                  <option value="images/melee/Melee_Spline.png">SPLINE</option>
+                  <optgroup label="TETHERED REALMS">
+                     <option value="images/melee/Melee_Tethered_Realms.png">TETHERED_REALMS</option>
+                     <option value="images/melee/Melee_Tethered_Realms_Dual.png">TETHERED_REALMS (DUAL</option>
+                  </optgroup>
+                  <option value="images/melee/Melee_VALORANT_Go_Vol1.png">VALORANT GO VOL1</option>
+                  <option value="images/melee/Melee_Winterwunderland.png">WINTERWUNDERLAND</option>
+                  <option value="images/melee/Melee_Winterwunderland_Blue.png">WINTERWUNDERLAND (BLUE)</option>
+                  <option value="images/melee/Melee_Winterwunderland_Green.png">WINTERWUNDERLAND (GREEN)</option>
+                  <option value="images/melee/Melee_Winterwunderland_Rainbow.png">WINTERWUNDERLAND (RAINBOW)</option>
+               </select>
+            </div>
+         </div>
+      </div>
+   </body>
+   <footer>
+   </footer>
+</html>
