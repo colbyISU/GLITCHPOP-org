@@ -17,7 +17,9 @@ html {
 
 @font-face {
     font-family: AkiraExpanded;
-    src: url(fonts/AkiraExpanded.otf);
+    src: url("fonts/AkiraExpanded.otf");
+    src: url("fonts/AkiraExpanded.otf") format('embedded-opentype'), url("fonts/AkiraExpanded.otf") format('woff'), url("fonts/AkiraExpanded.otf") format('truetype');
+    font-style: normal;
 }
 
 
