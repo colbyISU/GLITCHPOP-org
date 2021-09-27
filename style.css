@@ -32,20 +32,34 @@ html {
 
 .logo img {
     height: 50px;
-    margin-left: 100px;
+    margin-left: 149px;
 }
   
-.logo, .menu {
+.logo, .menu, .login {
     vertical-align: middle;
     display: table-cell;
 }
   
 .menu ul {
-    text-align: right;
-    margin-right: 100px;
+    text-align: center;
+    width: fit-content;
 }
   
 .menu ul li {
+    font-family: AkiraExpanded;
+    font-weight: 200;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px;
+}
+
+.login ul {
+    text-align: right;
+    margin-right: 25px;
+    width: fit-content;
+}
+  
+.login ul li {
     font-family: AkiraExpanded;
     font-weight: 200;
     display: inline-block;
@@ -128,7 +142,6 @@ img {
 .bottom:hover {
     background-color: rgba(110, 133, 172, 0.4);
 }
-
 
 
 .col1 {
@@ -239,6 +252,22 @@ select optgroup {
 }
 
 .menu .current {
+    color: #ffffff;
+}
+
+.login a {
+    color: #adadad;
+}
+
+.login a:hover {
+    color: white;
+}
+
+.login a:visited {
+    text-decoration: none;
+}
+
+.login .current {
     color: #ffffff;
 }
 
