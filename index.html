@@ -14,7 +14,7 @@
          </div>
          <nav class="menu">
             <ul>
-               <a href="index.html"><li>COLLECTION</li></a>
+               <a class="current" href="index.html"><li>COLLECTION</li></a>
                <a href="saved.html"><li>SAVED</li></a>
                <a href="contact.html"><li>CONTACT</li></a>
             </ul>
@@ -937,6 +937,14 @@
                </select>
             </div>
          </div>
+
+         <div class="resetButton">
+            <button type="button" onclick="reset()">RESET</button>
+         </div>
+         <div class="saveButton">
+            <button type="button" onclick="reset()">SAVE</button>
+         </div>
+
          <div class="bottom meleeDiv">
             <div class="col4">
                <div><img id="meleeImage" class="profile" src="images/melee/Melee.png"></div>
@@ -1023,6 +1031,29 @@
             </div>
          </div>
       </div>
+      <script>
+         function reset() {
+            $("div.select-dropdown select").prop('selectedIndex',0);
+            classicImage.src = "images/classic/Classic.png";
+            stingerImage.src = "images/stinger/Stinger.png";
+            bulldogImage.src = "images/bulldog/Bulldog.png";
+            marshalImage.src = "images/marshal/Marshal.png";
+            shortyImage.src = "images/shorty/shorty.png";
+            spectreImage.src = "images/spectre/spectre.png";
+            guardianImage.src = "images/guardian/guardian.png";
+            operatorImage.src = "images/operator/operator.png";
+            frenzyImage.src = "images/frenzy/frenzy.png";
+            buckyImage.src = "images/bucky/bucky.png";
+            phantomImage.src = "images/phantom/phantom.png";
+            aresImage.src = "images/ares/ares.png";
+            ghostImage.src = "images/ghost/ghost.png";
+            judgeImage.src = "images/judge/judge.png";
+            vandalImage.src = "images/vandal/vandal.png";
+            odinImage.src = "images/odin/odin.png";
+            sheriffImage.src = "images/sheriff/sheriff.png";
+            meleeImage.src = "images/melee/melee.png";
+         }
+      </script>
    </body>
    <!--<footer>
       <p>COPYRIGHT GLITCHPOP.ORG 2021</p>

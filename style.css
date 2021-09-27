@@ -1,6 +1,7 @@
 html {
     background-color: #314870;
     background-image: url("images/CollectionBackground.png");
+    background-size: cover;
     top: 0; 
     left: 0;
     min-width: 100%;
@@ -12,6 +13,11 @@ html {
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+@font-face {
+    font-family: AkiraExpanded;
+    src: url(fonts/AkiraExpanded.otf);
 }
 
 
@@ -40,11 +46,11 @@ html {
 }
   
 .menu ul li {
-    font-family: Arial;
-    font-weight: 600;
+    font-family: AkiraExpanded;
+    font-weight: 200;
     display: inline-block;
     vertical-align: top;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 
 body {
@@ -97,7 +103,7 @@ body {
     text-align: center;
     color: white;
     margin: 10px;
-    margin-left: 717px;
+    margin-left: 566px;
 }
 
 img {
@@ -228,14 +234,38 @@ select optgroup {
     color: white;
 }
 
-.menu a:active {
-    color: white;
-}
-
 .menu a:visited {
     text-decoration: none;
 }
 
-.menu a:current {
+.menu .current {
+    color: #ffffff;
+}
+
+.resetButton {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.saveButton {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    margin-left: -5px;
+}
+
+button {
+    padding: 5px;
+    width: 60px;
+    background-color: rgba(99, 117, 151, 0.3);
     color: white;
+    font-family: 'Trebuchet MS';
+    border: none;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: rgba(110, 133, 172, 0.4);
 }
