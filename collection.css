@@ -1,0 +1,129 @@
+
+.bodyDiv {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 9pt;
+    letter-spacing: 0.5pt;
+
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.85);
+    transform-origin: center;
+    white-space:nowrap;
+    width: fit-content;
+    position: relative;
+}
+
+.top {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.main {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.bottom {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.meleeDiv {
+    display: inline-block;
+    background-color: rgba(99, 117, 151, 0.3);
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-left: 566px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    background-color: rgba(110, 133, 172, 0.25);
+    height: 16px;
+    line-height: 16px;
+}
+
+.top:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+.main:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+.bottom:hover {
+    background-color: rgba(110, 133, 172, 0.4);
+}
+
+
+.col1 {
+    position: relative;
+    width: 171px;
+    height: 89px;
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2 {
+    position: relative;
+    width: 281px;
+    height: 89px;
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col3 {
+    position: relative;
+    width: 316px;
+    height: 89px;
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col4 {
+    position: relative;
+    width: 342px;
+    height: 89px;
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile {
+    max-height: 78px;
+}
+
+.weaponText {
+    direction: rtl;
+    margin-bottom: -15px;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+}
