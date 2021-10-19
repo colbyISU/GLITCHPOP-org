@@ -24,22 +24,23 @@ li ul {
 	color: #fff;
 	background-color: rgba(157, 173, 207, 0.25);
 	backdrop-filter: blur(2px);
+	transition: all 0.2s ease 0s;
 }
 
 .col1 ul li a {
-	width: 128px;
+	width: 160px;
 }
 
 .col2 ul li a {
-	width: 248px;
+	width: 280px;
 }
 
 .col3 ul li a {
-	width: 288px;
+	width: 320px;
 }
 
 .col4 ul li a {
-	width: 308px;
+	width: 340px;
 }
 
 li:hover>ul {
@@ -73,7 +74,7 @@ ul:after {
 
 li a img {
 	display: block;
-	max-height: 35px;
+	max-height: 50px;
 	height: auto;
 	padding: 4px;
 	margin: auto;

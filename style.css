@@ -1,3 +1,10 @@
+@font-face {
+	font-family: AkiraExpanded;
+	src: "AkiraExpanded.otf";
+	src: url("AkiraExpanded.otf") format('embedded-opentype'), url("AkiraExpanded.otf") format('woff'), url("AkiraExpanded.otf") format('truetype');
+	font-style: normal;
+}
+
 html {
 	background-color: #314870;
 	background-image: url("images/CollectionBackground.png");
@@ -9,34 +16,71 @@ html {
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
 }
 
-@font-face {
+header {
+	background-color: #12161f;
+	margin-bottom: 20px;
+}
+
+nav li,
+nav a,
+header button {
 	font-family: AkiraExpanded;
-	src: "AkiraExpanded.otf";
-	src: url("AkiraExpanded.otf") format('embedded-opentype'), url("AkiraExpanded.otf") format('woff'), url("AkiraExpanded.otf") format('truetype');
-	font-style: normal;
+	color: #adadad;
+	font-size: 16px;
+}
+
+.navLinks {
+	list-style: none;
+}
+
+.navLinks li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.navLinks li a {
+	transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+	color: white;
+}
+
+.login button {
+	padding: 10px 25px;
+	color: white;
+	background-color: rgba(157, 173, 207, 0.40);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(255, 94, 94, 0.75);
+}
+
+.selected {
+	color: white;
 }
 
 header {
-	z-index: 1;
-	position: sticky;
-	top: 0;
-	font-size: 12pt;
-	margin-bottom: 20px;
-	background-color: #12161f;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10%;
 }
 
-#header {
-	box-sizing: border-box;
-	padding: 10px 15px;
-	display: table;
-	width: 100%;
-	height: 60px;
+.logo {
+	height: 40px;
+	cursor: pointer;
 }
 
 .menu {
@@ -44,8 +88,7 @@ header {
 }
 
 .logo img {
-	height: 50px;
-	margin-left: 50px;
+	height: 40px;
 }
 
 .logo,
@@ -68,8 +111,7 @@ header {
 }
 
 .login ul {
-	text-align: right;
-	margin-right: 50px;
+	justify-content: space-between;
 	width: fit-content;
 }
 
@@ -114,11 +156,14 @@ header {
 }
 
 footer {
+	position: absolute;
+	width: 100%;
 	bottom: 0;
 	font-size: 12pt;
 	margin: 0;
 	margin-top: 300px;
 	background-color: #12161f;
+	text-align: center;
 }
 
 .footerContainer {
@@ -132,5 +177,9 @@ footer {
 .footerContainer p {
 	color: #d1d1d1;
 	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.footerContainer span {
 	font-weight: bold;
 }
