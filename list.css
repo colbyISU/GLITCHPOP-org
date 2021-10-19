@@ -1,142 +1,112 @@
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    z-index: 1;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	z-index: 1;
 }
+
 ul li {
-    position: relative;
+	position: relative;
 }
 
 li ul {
-    display: none;
+	display: none;
 }
+
+.col1 ul li a,
+.col2 ul li a,
+.col3 ul li a,
+.col4 ul li a {
+	display: block;
+	padding: 2px 16px;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(157, 173, 207, 0.25);
+	backdrop-filter: blur(2px);
+}
+
 .col1 ul li a {
-    display: block;
-    padding: 2px 16px;
-    width: 171px;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(84, 103, 143, 0.75)
+	width: 128px;
 }
 
 .col2 ul li a {
-    display: block;
-    padding: 2px 16px;
-    width: 281px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #54678f
+	width: 248px;
 }
 
 .col3 ul li a {
-    display: block;
-    padding: 2px 16px;
-    width: 316px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #54678f
+	width: 288px;
 }
 
 .col4 ul li a {
-    display: block;
-    padding: 2px 16px;
-    width: 125px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #54678f
+	width: 308px;
 }
 
+li:hover>ul {
+	display: block;
+	position: absolute;
+}
 
-ul li a:hover, ul li a:active {
-    background: #2c3750;
-}
-li:hover > ul {
-    display: block;
-    position: absolute;
-}
 li:hover li {
-    float: left;
+	float: left;
 }
 
-li:hover li a:hover, li:active, li a:active {
-    background: #2c3e50;
+li:hover li a:hover {
+	background: rgba(67, 84, 122, 0.6);
 }
 
 ul ul ul {
-    left: 100%;
-    top: 0;
-    width: fit-content;
+	left: 100%;
+	top: 0;
+	width: fit-content;
 }
-ul:before, ul:after {
-    content: " ";
-    display: table;
-}
+
+ul:before,
 ul:after {
-    clear: both;
+	content: " ";
+	display: table;
+}
+
+ul:after {
+	clear: both;
 }
 
 li a img {
-    display: block;
-    max-height: 35px;
-    height: auto;
-    padding: 5px;
-    margin: auto;
+	display: block;
+	max-height: 35px;
+	height: auto;
+	padding: 4px;
+	margin: auto;
 }
 
-.col1 .noHover:hover, .col1 .noHover:active {
-    background-color: rgba(151, 176, 240, 0.25);
-    width: 171px;
+.col1 .noHover .col1 .noHover:hover {
+	width: 171px;
 }
 
-.col1 .noHover {
-    width: 171px;
-    background-color: rgba(151, 176, 240, 0.25);
+.col2 .noHover .col2 .noHover:hover {
+	width: 281px;
 }
 
-.col2 .noHover:hover, .col2 .noHover:active {
-    background-color: rgba(151, 176, 240, 0.25);
-    width: 281px;
+.col3 .noHover .col3 .noHover:hover {
+	width: 316px;
 }
 
-.col2 .noHover {
-    width: 281px;
-    background-color: rgba(151, 176, 240, 0.25);
-}
-
-.col3 .noHover:hover, .col3 .noHover:active {
-    background-color: rgba(151, 176, 240, 0.25);
-    width: 316px;
-}
-
-.col3 .noHover {
-    width: 316px;
-    background-color: rgba(151, 176, 240, 0.25);
-}
-
-.col4 .noHover:hover, .col4 .noHover:active {
-    background-color: rgba(151, 176, 240, 0.25);
-    width: 281px;
-}
-
-.col4 .noHover {
-    width: 281px;
-    background-color: rgba(151, 176, 240, 0.25);
+.col4 .noHover .col4 .noHover:hover {
+	width: 342px;
 }
 
 ul li ul {
-    max-height:275px;
-    overflow-y: overlay;
- }
+	max-height: 280px;
+	overflow-y: overlay;
+}
 
  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .25);
-    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  }
+	-webkit-appearance: none;
+	width: 7px;
+}
+
+ ::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .25);
+	box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}

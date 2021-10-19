@@ -1,129 +1,115 @@
-
-.bodyDiv {
-    font-family: Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 9pt;
-    letter-spacing: 0.5pt;
-
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(0.85);
-    transform-origin: center;
-    white-space:nowrap;
-    width: fit-content;
-    position: relative;
+body {
+	text-align: center;
 }
 
-.top {
-    display: inline-block;
-    background-color: rgba(99, 117, 151, 0.3);
-    text-align: center;
-    color: white;
-    margin: 10px;
+.wrapper {
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 8pt;
+	letter-spacing: 0.5pt;
+	white-space: nowrap;
 }
 
-.main {
-    display: inline-block;
-    background-color: rgba(99, 117, 151, 0.3);
-    text-align: center;
-    color: white;
-    margin: 10px;
+.col1:hover,
+.col2:hover,
+.col3:hover,
+.col4:hover {
+	background-color: rgba(110, 133, 172, 0.4);
 }
 
-.bottom {
-    display: inline-block;
-    background-color: rgba(99, 117, 151, 0.3);
-    text-align: center;
-    color: white;
-    margin: 10px;
+.col1,
+.col2,
+.col3,
+.col4 {
+	position: relative;
+	margin: 10px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	background-color: rgba(99, 117, 151, 0.3);
 }
-
-.meleeDiv {
-    display: inline-block;
-    background-color: rgba(99, 117, 151, 0.3);
-    text-align: center;
-    color: white;
-    margin: 10px;
-    margin-left: 566px;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.text {
-    background-color: rgba(110, 133, 172, 0.25);
-    height: 16px;
-    line-height: 16px;
-}
-
-.top:hover {
-    background-color: rgba(110, 133, 172, 0.4);
-}
-
-.main:hover {
-    background-color: rgba(110, 133, 172, 0.4);
-}
-
-.bottom:hover {
-    background-color: rgba(110, 133, 172, 0.4);
-}
-
 
 .col1 {
-    position: relative;
-    width: 171px;
-    height: 89px;
-    padding: 16px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 160px
 }
 
 .col2 {
-    position: relative;
-    width: 281px;
-    height: 89px;
-    padding: 16px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 280px;
 }
 
 .col3 {
-    position: relative;
-    width: 316px;
-    height: 89px;
-    padding: 16px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 320px;
 }
 
 .col4 {
-    position: relative;
-    width: 342px;
-    height: 89px;
-    padding: 16px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 340px;
 }
 
+.mainImage {
+	height: 112px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 .profile {
-    max-height: 78px;
+	max-height: 80px;
+	margin: 0;
+}
+
+.col1 .profile {
+	max-width: 130px;
+	padding: 15px;
+	object-fit: cover;
+}
+
+.col2 .profile {
+	max-width: 230px;
+	padding: 15px;
+}
+
+.col3 .profile {
+	max-width: 290px;
+	padding: 15px;
+}
+
+.col4 .profile {
+	max-width: 310px;
+	padding: 15px;
 }
 
 .weaponText {
-    direction: rtl;
-    margin-bottom: -15px;
-    position: absolute;
-    bottom: 0; 
-    width: 100%;
+	direction: rtl;
+	bottom: 0;
+	width: 100%;
+}
+
+.meleeDiv {
+	margin-left: 535px;
+}
+
+button {
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 8pt;
+	letter-spacing: 0.5pt;
+	background-color: rgba(157, 173, 207, 0.25);
+	border: none;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;
+}
+
+button:hover {
+	background-color: rgba(157, 173, 207, 0.40);
+	cursor: pointer;
+}
+
+.buttons {
+	display: inline-block;
+	vertical-align: top;
+    margin: 5px;
 }
