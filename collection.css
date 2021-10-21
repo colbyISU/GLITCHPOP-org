@@ -1,13 +1,8 @@
-body {
-	text-align: center;
-}
-
 .wrapper {
-	font-family: Helvetica, sans-serif;
-	font-weight: lighter;
-	font-size: 8pt;
-	letter-spacing: 0.5pt;
-	white-space: nowrap;
+	margin-top: 100px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 300px;
 }
 
 .col1:hover,
@@ -74,7 +69,7 @@ body {
 }
 
 .col3 .profile {
-	max-width: 300px;
+	max-width: 285px;
 }
 
 .col4 .profile {
@@ -88,7 +83,7 @@ body {
 }
 
 .meleeDiv {
-	margin-left: 535px;
+	margin-left: 520px;
 }
 
 .buttons button {
@@ -104,6 +99,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	margin: 5px;
+	width: 50px;
 }
 
 .buttons button:hover {

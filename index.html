@@ -26,8 +26,9 @@
         }
     </script>
 </head>
-<header>
-    <img class="logo" src="GLITCHPOP3D.png" alt="logo">
+
+<header class="sticky">
+    <a href="index.html"><img class="logo" src="GLITCHPOP3D.png" alt="logo"></a>
     <nav>
         <ul class="navLinks">
             <li><a href="#" class="selected">HOME</a></li>
@@ -35,10 +36,11 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
-    <a class="login" href="index.html"><button>LOGIN</button></a>
+    <a class="loginButton" href="login/login.html"><button>LOGIN</button></a>
  </header>
 
-<body class="wrapper">
+<body>
+    <div class="wrapper">
         <div class="col1">
             <div class="mainImage">
                 <img id="classicImage" class="profile" src="images/classic/Classic.png">
@@ -1357,7 +1359,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+    
         </div>
         <br>
         <div class="col1">
@@ -2183,7 +2185,7 @@
         }
 
         $('ul').on( 'mousewheel DOMMouseScroll', function (e) { 
-  
+
             var e0 = e.originalEvent;
             var delta = e0.wheelDelta || -e0.detail;
 
@@ -2314,6 +2316,7 @@
         });
 
     </script>
+    </div>
 </body>
 
 <footer>

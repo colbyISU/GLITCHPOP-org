@@ -22,8 +22,8 @@ li ul {
 	padding: 2px 16px;
 	text-decoration: none;
 	color: #fff;
-	background-color: rgba(157, 173, 207, 0.25);
-	backdrop-filter: blur(2px);
+	background-color: rgba(107, 130, 172, 0.5);
+	backdrop-filter: blur(4px);
 	transition: all 0.2s ease 0s;
 }
 
@@ -53,7 +53,7 @@ li:hover li {
 }
 
 li:hover li a:hover {
-	background: rgba(67, 84, 122, 0.6);
+	background: rgba(73, 89, 119, 0.5);
 }
 
 ul ul ul {
@@ -78,6 +78,22 @@ li a img {
 	height: auto;
 	padding: 4px;
 	margin: auto;
+}
+
+.col1 li a img {
+	max-width: 90px;
+}
+
+.col2 li a img {
+	max-width: 150px;
+}
+
+.col3 li a img {
+	max-width: 170px;
+}
+
+.col4 li a img {
+	max-width: 180px;
 }
 
 .col1 .noHover .col1 .noHover:hover {
@@ -107,7 +123,7 @@ ul li ul {
 }
 
  ::-webkit-scrollbar-thumb {
-	border-radius: 4px;
+	border-radius: 10px;
 	background-color: rgba(0, 0, 0, .25);
 	box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }

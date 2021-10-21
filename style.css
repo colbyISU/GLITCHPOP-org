@@ -7,12 +7,12 @@
 
 html {
 	background-color: #314870;
-	background-image: url("images/CollectionBackground.png");
+	background: url("images/CollectionBackground.png") no-repeat fixed;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	min-height: 100%;
+	height: 100%;
 }
 
 * {
@@ -25,15 +25,41 @@ html {
 
 header {
 	background-color: #12161f;
-	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10%;
+}
+
+.sticky {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	width: 100%
 }
 
 nav li,
 nav a,
-header button {
+.loginButton button {
 	font-family: AkiraExpanded;
 	color: #adadad;
 	font-size: 16px;
+    line-height: normal;
+}
+
+.loginButton button {
+	padding: 10px 25px;
+	color: white;
+	background-color: rgba(157, 173, 207, 0.40);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.loginButton button:hover {
+	background-color: #ff5e5e;
+	color: white;
 }
 
 .navLinks {
@@ -53,29 +79,9 @@ header button {
 	color: white;
 }
 
-.login button {
-	padding: 10px 25px;
-	color: white;
-	background-color: rgba(157, 173, 207, 0.40);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
-
-button:hover {
-	background-color: rgba(255, 94, 94, 0.75);
-}
 
 .selected {
 	color: white;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 10%;
 }
 
 .logo {
@@ -89,13 +95,6 @@ header {
 
 .logo img {
 	height: 40px;
-}
-
-.logo,
-.menu,
-.login {
-	vertical-align: middle;
-	display: table-cell;
 }
 
 .menu ul {
@@ -155,13 +154,23 @@ header {
 	color: #ffffff;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 8pt;
+	letter-spacing: 0.5pt;
+}
+
 footer {
-	position: relative;
 	width: 100%;
-	bottom: 0;
 	font-size: 12pt;
 	margin: 0;
-	margin-top: 300px;
+    margin-top: auto;
 	background-color: #12161f;
 	text-align: center;
 }
@@ -169,9 +178,8 @@ footer {
 .footerContainer {
 	box-sizing: border-box;
 	padding: 30px;
-	display: table;
 	width: 100%;
-	height: 60px;
+	height: 80px;
 }
 
 .footerContainer p {
