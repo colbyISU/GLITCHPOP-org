@@ -1,0 +1,129 @@
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	z-index: 1;
+}
+
+ul li {
+	position: relative;
+}
+
+li ul {
+	display: none;
+}
+
+.col1 ul li a,
+.col2 ul li a,
+.col3 ul li a,
+.col4 ul li a {
+	display: block;
+	padding: 2px 16px;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(107, 130, 172, 0.5);
+	backdrop-filter: blur(4px);
+	transition: all 0.2s ease 0s;
+}
+
+.col1 ul li a {
+	width: 160px;
+}
+
+.col2 ul li a {
+	width: 280px;
+}
+
+.col3 ul li a {
+	width: 320px;
+}
+
+.col4 ul li a {
+	width: 340px;
+}
+
+li:hover>ul {
+	display: block;
+	position: absolute;
+}
+
+li:hover li {
+	float: left;
+}
+
+li:hover li a:hover {
+	background: rgba(73, 89, 119, 0.5);
+}
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+	width: fit-content;
+}
+
+ul:before,
+ul:after {
+	content: " ";
+	display: table;
+}
+
+ul:after {
+	clear: both;
+}
+
+li a img {
+	display: block;
+	max-height: 50px;
+	height: auto;
+	padding: 4px;
+	margin: auto;
+}
+
+.col1 li a img {
+	max-width: 90px;
+}
+
+.col2 li a img {
+	max-width: 150px;
+}
+
+.col3 li a img {
+	max-width: 170px;
+}
+
+.col4 li a img {
+	max-width: 180px;
+}
+
+.col1 .noHover .col1 .noHover:hover {
+	width: 171px;
+}
+
+.col2 .noHover .col2 .noHover:hover {
+	width: 281px;
+}
+
+.col3 .noHover .col3 .noHover:hover {
+	width: 316px;
+}
+
+.col4 .noHover .col4 .noHover:hover {
+	width: 342px;
+}
+
+ul li ul {
+	height: 280px;
+	overflow-y: overlay;
+}
+
+ ::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+
+ ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .25);
+	box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
